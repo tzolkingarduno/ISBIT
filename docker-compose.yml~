@@ -1,0 +1,8 @@
+version: "2.2"
+services:
+  app:
+    container_name: app
+    restart: "no"
+    build: .
+    ports:
+      - 3000:3000
