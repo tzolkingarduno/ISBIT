@@ -1,23 +1,25 @@
-//
+This file serves as a quick guide for using the NodeJS app contained in the app.js file. Such app computes the gas price of a smart contract deployed in the Ethereum Ropsten Testnet. The connection to the testnet is achieved by using the Infura remote node service. Next, it displays the calculation in json format. The frameworks used for such app are express and web3.
 
-Este es un archivo para correr el docker en donde se encuentra la aplicación solicitada. Las versiones usadas son:
+
+Versions used for the app and container are:
 
 docker version 18.06.1-ce, build e68fc7a
 node version v8.12.0
 
-Para ejecutar el app fuera del docker se tiene que ejecutar el siguiente comando:
+To execute the app by itself type in the following command on your bash shell.
 
-$ cd <ruta_al_sig_directorio>/NodeApp
+$ cd <path_to_dir>/NodeApp
 $ node app.js
 
-Para ejecutar la aplicacion dentro del docker es necesario correr los siguientes comandos:
+Such app will respond on the url:     http://localhost:3000
 
-$ cd <ruta_al_sig_directorio>/NodeApp
+If the app is to be run using the docker container, then the following command have to be followed.
+
+
+$ cd <path_to_dir>/NodeApp
 
 $ docker-compose build
 
 $ docker-compose up
 
-Posteriormente se puede verificar la respuesta en formato json en la url:
-
-http://localhost:3000
+Finally the app will respond to the url:      http://localhost:3000
