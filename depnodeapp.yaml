@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: depnodeapp
+  labels:
+    app: nodeapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeapp
+  template:
+    metadata:
+      labels:
+        app: nodeapp
+    spec:
+      containers:
+      - name: contnodeapp
+        image: imapp
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
