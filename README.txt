@@ -57,4 +57,4 @@ $ kubectl expose deployment depnodeapp --type=LoadBalancer
 $ kubectl get services
 
 # Deploying in browser
-$ minikube service my-deploy
+$ minikube service depnodeapp
